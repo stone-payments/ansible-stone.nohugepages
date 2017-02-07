@@ -1,0 +1,14 @@
+- name: Copy files
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+  with_items:
+    - src: "nohugepages.sh"
+      dest: "/usr/local/libexec/nohugepages.sh"
+      mode: "0755"
+    - src: "nohugepages.service"
+      dest: "/etc/systemd/system/nohugepages.service"
+      mode: "0644"
+  notify: [ "reload systemd", "restart nohugepages" ]
+
