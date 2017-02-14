@@ -6,5 +6,4 @@
   service:
     name: nohugepages
     state: restarted
-    enabled: yes
-
+  when: nohugepages_standalone

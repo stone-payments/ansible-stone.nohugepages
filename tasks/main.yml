@@ -16,6 +16,5 @@
 - name: ensure standalone enable
   service:
     name: nohugepages
-    state: started
     enabled: true
   when: nohugepages_standalone
