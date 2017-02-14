@@ -7,4 +7,3 @@ ExecStart=/usr/local/libexec/nohugepages.sh
 
 [Install]
 WantedBy=multi-user.target
-

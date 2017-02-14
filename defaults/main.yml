@@ -1,0 +1,3 @@
+---
+nohugepages_standalone: true  # Ensure the service is enabled and started even
+                              # if no other unit calls it
