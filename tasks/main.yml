@@ -11,7 +11,11 @@
     - src: "nohugepages.service"
       dest: "/etc/systemd/system/nohugepages.service"
       mode: "0644"
-  notify: [ "reload systemd", "restart nohugepages" ]
+  notify:
+    - reload systemd
+    - restart nohugepages
+
+- meta: flush_handlers
 
 - name: ensure standalone enable
   service:
