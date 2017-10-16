@@ -3,7 +3,7 @@ Description=Disable Kernel Transparent Huge Pages
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/libexec/nohugepages.sh
+ExecStart=/usr/local/lib/nohugepages.sh
 
 [Install]
 WantedBy=multi-user.target
