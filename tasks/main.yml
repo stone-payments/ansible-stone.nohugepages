@@ -6,7 +6,7 @@
     mode: "{{ item.mode }}"
   with_items:
     - src: "nohugepages.sh"
-      dest: "/usr/local/libexec/nohugepages.sh"
+      dest: "/usr/local/lib/nohugepages.sh"
       mode: "0755"
     - src: "nohugepages.service"
       dest: "/etc/systemd/system/nohugepages.service"
